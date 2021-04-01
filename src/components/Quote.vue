@@ -1,20 +1,22 @@
 <template>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel.panel-default">
+    <div class="quote col-sm-6 col-md-4 col-lg-3">
+        <div class="card.card-default">
+            <div class="card-body">
+                <slot></slot>
+            </div>
         </div>
     </div>
-
-    
 </template>
 
 <script>
 export default {
+
     
 }
 </script>
 
 <style>
-    .panel-body {
+    .card-body{
         font-family:cursive;
         font-size: 24px;
         color:grey;
@@ -23,9 +25,8 @@ export default {
         cursor:pointer;
 
     }
-    
     .quote:hover{
-
+        background:#ffe2e2;
     }
     
 </style>

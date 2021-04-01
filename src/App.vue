@@ -1,9 +1,11 @@
 <template>
-  <div class="alert alert-success">This is a sweet success message</div>
-
+  <div class="container">
+    <quote-grid :quotes="quotes"></quote-grid>
+  </div>
 </template>
 
 <script>
+import QuoteGrid from './components/QuoteGrid.vue';
 export default {
   data(){
     return{
@@ -12,6 +14,9 @@ export default {
         ],
         maxQuotes:10
     }
+  },
+  components:{
+    'quoteGrid':QuoteGrid,
   }
   
 }
