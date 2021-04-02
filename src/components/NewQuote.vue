@@ -7,7 +7,7 @@
                 <label class="text-muted">Quote</label>
                 <textarea class="form-control" rows="3" v-model="quote"></textarea>
             </div>
-            <button class="btn btn-outline-dark" @click.prevent="createNew"> New Quote </button>
+            <button class="btn btn-sm btn-outline-dark" @click.prevent="createNew"> New Quote </button>
         </form>
     </div>
 
