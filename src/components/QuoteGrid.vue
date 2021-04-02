@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row pt-5">
         <app-quote v-for="quote in quotes">{{quote}}</app-quote>
     </div>     
 </template>
@@ -15,6 +15,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     
 </style>
