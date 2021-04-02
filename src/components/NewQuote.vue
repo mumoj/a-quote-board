@@ -1,15 +1,16 @@
 <template>
     <div class="row justify-content-center">
+
+    <div class="col-6 text-center">
         <form>
-            <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3 col-lg-5 form-group">
-                <label>Quote</label>
+            <div class="form-group">
+                <label class="text-muted">Quote</label>
                 <textarea class="form-control" rows="3" v-model="quote"></textarea>
             </div>
-
-            <div class="form-group">
-                <button class="btn btn-outline-success" @click.prevent="createNew"> New Quote </button>
-            </div>
+            <button class="btn btn-outline-dark" @click.prevent="createNew"> New Quote </button>
         </form>
+    </div>
+
         
     </div>
 </template>
@@ -33,6 +34,11 @@ export default {
 } 
 </script>
 
-<style>
+<style scoped>
+    label{
+            font-size: 30px;
+    }
     
-</style>>
+
+</style>
+    
