@@ -1,10 +1,10 @@
 <template>
-    <div class="quote col-sm-6 col-md-4 col-lg-3">
-        <div class="card.card-default">
+    <div class="card col-sm-6 col-md-4 col-lg-3">
             <div class="card-body">
-                <slot></slot>
+                <div class="card-text">
+                    <slot></slot>
+                </div>
             </div>
-        </div>
     </div>
 </template>
 
@@ -16,20 +16,19 @@ export default {
 </script>
 
 <style>
-    .card-body{
+    .card-text{
         font-family:cursive;
-        font-size: 24px;
+        font-size: 16px;
         color:grey;
     }
-    .quote{
+    .card-header{
         cursor:pointer;
         border-style:dashed;
         border-width:1px;
         border-color:rgb(15, 146, 233);
         border-radius:5px;
-
     }
-    .quote:hover{
+    .card:hover{
         background:#ffe2e2;
         border-style:none;
         
