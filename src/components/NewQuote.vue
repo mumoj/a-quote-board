@@ -4,7 +4,6 @@
     <div class="col-6 text-center">
         <form>
             <div class="form-group">
-                <label class="text-muted">Quote</label>
                 <textarea class="form-control" rows="3" v-model="quote"></textarea>
             </div>
             <button class="btn btn-sm btn-outline-dark" @click.prevent="createNew"> New Quote </button>
@@ -36,7 +35,10 @@ export default {
 
 <style scoped>
     label{
-            font-size: 30px;
+        font-size: 16px;
+    }
+    form{
+        padding-top: 20px;
     }
     
 
