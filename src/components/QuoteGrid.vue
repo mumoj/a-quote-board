@@ -1,6 +1,6 @@
 <template>
-    <div class="row pt-5">
-        <app-quote  v-for="(quote,index) in quotes" :key="index" @click.native="deleteQuote(index)">{{quote}}</app-quote>
+    <div class="row pt-5 justify-content-center">
+        <app-quote  v-for="(quote,index) in quotes" :key="index" @click.native="deleteQuote(index)" >{{quote}}</app-quote>
     </div>     
 </template>
 
