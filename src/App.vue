@@ -4,7 +4,7 @@
     <new-quote @quoteAdded="newQuote"></new-quote>
     <quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></quote-grid>
 
-    <div class="alert alert-info text-center mb-4" role="alert">
+    <div class="alert alert-info text-center" role="alert">
       Click a quote to delete it!
     </div>
 
