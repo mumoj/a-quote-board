@@ -1,4 +1,4 @@
-# wonderful-quotes
+# Quote Board
 
 > A Vue.js project
 
